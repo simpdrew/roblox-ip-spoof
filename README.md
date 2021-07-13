@@ -1,5 +1,5 @@
 # roblox-ip-spoof
-Proxies your requests through roblox.qq.com proxy servers, thus allowing the use of the `Roblox-CNP-True-IP` IP forwarding header.
+Proxies your requests through roblox.qq.com servers, thus allowing the use of the `Roblox-CNP-True-IP` IP forwarding header.
  
 ```python
 from roblox import Roblox
