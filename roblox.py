@@ -5,6 +5,8 @@ import json as jsonlib
 import http.client
 import socket
 import ssl
+import gzip
+import zlib
 
 class CaseInsensitiveDict(MutableMapping):
     def __init__(self, data=None, **kwargs):
